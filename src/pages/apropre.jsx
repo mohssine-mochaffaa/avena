@@ -51,8 +51,8 @@ export default function Home() {
             <Link style={{textDecoration:"none"}} href="/"><p className={styles.page}>Home</p></Link>
             <Link style={{textDecoration:"none"}} href="/apropre"><p className={styles.page}>A propos</p></Link>
               <p className={styles.page}>Nos services</p>
-              <Link style={{textDecoration:"none"}} href="/equipements"><p className={styles.page}>Prestation</p></Link>
-              <p className={styles.page}>Contact</p>
+              <Link style={{textDecoration:"none"}} href="/"><p className={styles.page}>Prestation</p></Link>
+              <Link style={{textDecoration:"none"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
             </div>
 
             <div className={styles.nav2S3}>
@@ -70,12 +70,13 @@ export default function Home() {
         </div>
         <div style={{display:menu}} className={styles.menu}>
           <div className={styles.menuList}>
-          <center>
-          <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/"><p className={styles.page}>Home</p></Link>
+            <center>
+            <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/"><p className={styles.page}>Home</p></Link>
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/apropre"><p className={styles.page}>A propos</p></Link>
-              <p style={{marginBottom:"25px"}} className={styles.page}>Nos services</p>
+              <p style={{marginBottom:"20px"}} className={styles.page}>Nos services</p>
               <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/equipements"><p className={styles.page}>Prestation</p></Link>
-              <p style={{marginBottom:"20px"}} className={styles.page}>Contact</p>
+              <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
+
             </center>
           </div>
         </div>

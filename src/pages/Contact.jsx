@@ -54,7 +54,7 @@ export default function Contact() {
             <Link style={{textDecoration:"none"}} href="/apropre"><p className={styles.page}>A propos</p></Link>
               <p className={styles.page}>Nos services</p>
               <Link style={{textDecoration:"none"}} href="/"><p className={styles.page}>Prestation</p></Link>
-              <p className={styles.page}>Contact</p>
+              <Link style={{textDecoration:"none"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
             </div>
 
             <div className={styles.nav2S3}>
@@ -77,7 +77,8 @@ export default function Contact() {
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/apropre"><p className={styles.page}>A propos</p></Link>
               <p style={{marginBottom:"20px"}} className={styles.page}>Nos services</p>
               <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/equipements"><p className={styles.page}>Prestation</p></Link>
-              <p style={{marginBottom:"20px"}} className={styles.page}>Contact</p>
+              <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
+
             </center>
           </div>
         </div>
