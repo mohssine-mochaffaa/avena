@@ -50,7 +50,6 @@ export default function Home() {
             <div className={styles.nav2S2}>
             <Link style={{textDecoration:"none"}} href="/"><p className={styles.page}>A propos</p></Link>
             <Link style={{textDecoration:"none"}} href="/Services"><p className={styles.page}>Nos services</p></Link>
-              <Link style={{textDecoration:"none"}} href="/"><p className={styles.page}>Prestation</p></Link>
               <Link style={{textDecoration:"none"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
             </div>
 
@@ -72,7 +71,6 @@ export default function Home() {
             <center>
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/"><p className={styles.page}>A propos</p></Link>
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Services"><p className={styles.page}>Nos services</p></Link>
-              <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/"><p className={styles.page}>Prestation</p></Link>
               <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
             </center>
           </div>
