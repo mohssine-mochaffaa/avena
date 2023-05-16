@@ -385,12 +385,20 @@
 
 .contact{
   width: 100%;
-  height: 550px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.imageContainer{
+  background-image: url(/assets/contact.jpg);
+  width: 550px;
+  height: 550px;
+  background-size: cover;
+  position: relative;
 }
 .contactContainer{
-  margin-top: 50px;
+  margin-top: 0px;
   padding: 20px;
 }
 .contactContainer h2{
@@ -402,8 +410,6 @@
 .contactContainer form{
   width: 600px;
   padding: 15px;
-  border: 1px solid rgb(224, 224, 224);
-  box-shadow: 3px 3px  5px rgb(185, 185, 185);
 
 }
 
@@ -411,16 +417,33 @@
   display: block;
   width: 99%;
   outline: none;
-  margin-bottom: 10px;
-  height: 30px;
+  margin-bottom: 20px;
+  height: 50px;
+  border: 1px solid rgb(153, 153, 153);
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 17px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.contactContainer form input:hover{
+  border: 1px solid rgb(46, 109, 255);
 }
 .contactContainer form textarea{
   display: block;
   width: 99%;
   outline: none;
-  height: 80px;
+  height: 120px;
   margin-bottom: 10px;
+  padding-left: 5px;
+  border: 1px solid rgb(153, 153, 153);
+  padding-top: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
 
+}
+
+.contactContainer form textarea:hover{
+  border: 1px solid rgb(46, 109, 255);
 }
 .contactContainer form input[type="submit"]{
   display: block;
@@ -437,6 +460,168 @@
 .contactContainer form{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+@media screen and (max-width :1300px) {
+  .contactContainer form input{
+    display: block;
+    width: 99%;
+    outline: none;
+    margin-bottom: 20px;
+    height: 50px;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .contactContainer form textarea{
+    display: block;
+    width: 99%;
+    outline: none;
+    height: 120px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    border: 1px solid rgb(153, 153, 153);
+    padding-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+  
+  }
+  .contactContainer form input[type="submit"]{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(0, 114, 245);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+    height: 35px;
+  
+  }
+  .contactContainer form{
+    width: 500px;
+    padding: 15px;
+  
+  }
+  .imageContainer{
+    background-image: url(/assets/contact.jpg);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+@media screen and (max-width :1080px) {
+  .contactContainer form input{
+    display: block;
+    width: 99%;
+    outline: none;
+    margin-bottom: 20px;
+    height: 50px;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .contactContainer form textarea{
+    display: block;
+    width: 99%;
+    outline: none;
+    height: 120px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    border: 1px solid rgb(153, 153, 153);
+    padding-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+  
+  }
+  .contactContainer form input[type="submit"]{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(0, 114, 245);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+    height: 35px;
+  
+  }
+  .contactContainer form{
+    width: 450px;
+    padding: 15px;
+  
+  }
+  .imageContainer{
+    background-image: url(/assets/contact.jpg);
+    width: 450px;
+    height: 450px;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+
+@media screen and (max-width :996px) {
+  .contactContainer form input{
+    display: block;
+    width: 99%;
+    outline: none;
+    margin-bottom: 20px;
+    height: 50px;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .contactContainer form textarea{
+    display: block;
+    width: 99%;
+    outline: none;
+    height: 120px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    border: 1px solid rgb(153, 153, 153);
+    padding-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+  
+  }
+  .contactContainer form input[type="submit"]{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(0, 114, 245);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+    height: 35px;
+  
+  }
+  .contactContainer form{
+    width: 450px;
+    padding: 15px;
+    position: relative;
+  
+  }
+  .imageContainer{
+    background-image: url(/assets/contact.jpg);
+    width: 450px;
+    height: 450px;
+    background-size: cover;
+    position: relative;
+    margin-bottom: -50px;
+  }
+}
+
+
 @media screen and (max-width :886px) {
   .nav{
     display: none;
@@ -450,7 +635,7 @@
     z-index: 1;
   }
   .contactContainer {
-    margin-top: 100px;
+    margin-top: 0px;
   
   }
 }
@@ -475,8 +660,7 @@
   .contactContainer form{
     width: 500px;
     padding: 15px;
-    border: 1px solid rgb(224, 224, 224);
-    box-shadow: 3px 3px  5px rgb(185, 185, 185);
+ 
   
   }
 }
@@ -497,15 +681,21 @@
     text-shadow: 2px 2px 2px rgb(49, 49, 49);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
+  .imageContainer{
+    background-image: url(/assets/contact.jpg);
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width:575px) {
   .contactContainer form{
     width: 400px;
     padding: 15px;
-    border: 1px solid rgb(224, 224, 224);
-    box-shadow: 3px 3px  5px rgb(185, 185, 185);
-  
+
   }
 }
 @media screen and (max-width:475px) {
@@ -547,9 +737,16 @@
   .contactContainer form{
     width: 300px;
     padding: 15px;
-    border: 1px solid rgb(224, 224, 224);
-    box-shadow: 3px 3px  5px rgb(185, 185, 185);
+
   
+  }
+  .imageContainer{
+    background-image: url(/assets/contact.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    margin-top: 40px;
   }
 }
 
@@ -592,8 +789,7 @@
   .contactContainer form{
     width: 250px;
     padding: 15px;
-    border: 1px solid rgb(224, 224, 224);
-    box-shadow: 3px 3px  5px rgb(185, 185, 185);
+   
   
   }
 }

@@ -81,18 +81,17 @@ export default function Contact() {
 
 
         <div className={styles.contact}>
-            <div className={styles.contactContainer}>
 
+            <div className={styles.imageContainer}>
+            </div>
+            
+            <div className={styles.contactContainer}>
         <form>
-        <h2>Contact us</h2>
-        <br />
-      <p>We are honored to contact you as soon as possible</p><br />
-      <label>Name</label>
-      <input  type="text" name="user_name" />
-      <label>Email</label>
-      <input  type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
+       
+      <input placeholder='Votre nom' type="text" name="user_name" />
+      <input  placeholder='Votre email' type="email" name="user_email" />
+      <input  placeholder='Votre Numéro de téléphone' type="email" name="user_email" />
+      <textarea placeholder='Message...' name="message" />
       <input type="submit" value="Send" />
     </form>
             </div>
