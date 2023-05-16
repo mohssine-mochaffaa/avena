@@ -3,12 +3,16 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useState } from 'react'
+import Scroll from 'react-scroll'
 import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Services() {
-  const [menu,setMenu] = useState("none")
+  const [menu,setMenu] = useState("none");
+
+  var ScrollLink = Scroll.Link;
+
 
   const handleMenu =()=>{
     if (menu == "none") {
@@ -101,6 +105,8 @@ export default function Services() {
         
         <div className={styles.main4}>
         <div className={styles.main4Container}>
+        <ScrollLink activeClass="active" to="nettoyageId" spy={true} smooth={true} offset={-120} duration={500}>
+
           <div className={styles.card}>
             <center>
             <div className={styles.circle}>
@@ -112,6 +118,10 @@ export default function Services() {
             </center>
           </div>
 
+          </ScrollLink>  
+
+          <ScrollLink activeClass="active" to="securityId" spy={true} smooth={true} offset={-120} duration={500}>
+
           <div className={styles.card}>
             <center>
             <div className={styles.circle}>
@@ -121,11 +131,14 @@ export default function Services() {
             <p>Notre equipe d'experts en securité est toujours la pour vous aider a rester en sécurité</p>
             </center>
           </div>
+
+          </ScrollLink> 
           </div>
         </div>
 
+         
 
-        <div className={styles.main22}>
+        <div id="nettoyageId" className={styles.main22}>
         <video loop autoPlay muted className={styles.video}>
         <source src="/assets/vid.mp4" />
       </video>
@@ -147,7 +160,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className={styles.main25}>
+        <div id='securityId' className={styles.main25}>
           <div className={styles.mainbox}>
             <div>
             <h1 className={styles.tilteApropre}>Solutions de sécurité personnalisées pour répondre a vos besoins unique</h1>
