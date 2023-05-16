@@ -70,7 +70,7 @@ export default function Home() {
         <div style={{display:menu}} className={styles.menu}>
           <div className={styles.menuList}>
             <center>
-            <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/aropre"><p className={styles.page}>A propos</p></Link>
+            <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/"><p className={styles.page}>A propos</p></Link>
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Services"><p className={styles.page}>Nos services</p></Link>
               <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/"><p className={styles.page}>Prestation</p></Link>
               <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
