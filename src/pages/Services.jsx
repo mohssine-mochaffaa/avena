@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import { useState } from 'react'
 import Scroll from 'react-scroll'
 import Link from 'next/link'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -54,9 +55,10 @@ export default function Services() {
             </div>
 
             <div className={styles.nav2S2}>
-            <Link style={{textDecoration:"none"}} href="/"><p className={styles.page}>A propos</p></Link>
+            <Link style={{textDecoration:"none"}} href="/"><p className={styles.page}>Acceuil</p></Link>
+            <Link style={{textDecoration:"none"}} href="/apropos"><p className={styles.page}>A propos</p></Link>
             <Link style={{textDecoration:"none"}} href="/Services"><p className={styles.page}>Nos services</p></Link>
-              <Link style={{textDecoration:"none"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
+            <Link style={{textDecoration:"none"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
             </div>
 
             <div className={styles.nav2S3}>
@@ -75,9 +77,10 @@ export default function Services() {
         <div style={{display:menu}} className={styles.menu}>
           <div className={styles.menuList}>
             <center>
-            <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/"><p className={styles.page}>A propos</p></Link>
+            <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/"><p className={styles.page}>Acceuil</p></Link>
+            <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/apropos"><p className={styles.page}>A propos</p></Link>
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Services"><p className={styles.page}>Nos services</p></Link>
-              <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
+            <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
             </center>
           </div>
         </div>
@@ -93,121 +96,97 @@ export default function Services() {
           </div>
         </div>
         
-
+<br /><br />
         <div className={styles.main3}>
           <div className={styles.main3Container}>
           <center>
-            <h1>Nous fournissons les meilleurs services pour vous !</h1>
-            <p>Nous sommes présent dans tout le Maroc.</p>
+            <h1 style={{letterSpacing:"5px",width:"700px",color:"black",fontFamily:"sans-serif",fontWeight:"500"}}>Nous somme animés par la passion. L'exellence et notre amour pour notre métier.</h1>
           </center>
           </div>
         </div>
+
+        <div className={styles.services}>
+          <div className={styles.service}>
+            <img src="/assets/grass.jpg" alt="" />
+            <div className={styles.serviceTest}>
+            <ScrollLink 
+        to="jardinage" 
+        spy={true} 
+        smooth={true} 
+        duration={500} 
+        className='some-class' 
+        activeClass='some-active-class'
+        offset={-150}>
+          <p>Jardinage et entretien des espaces verts</p>
+      </ScrollLink>
+            </div>
+          </div>
+          <div className={styles.service}>
+            <div className={styles.serviceTest2}>
+            <ScrollLink 
+        to="securite" 
+        spy={true} 
+        smooth={true} 
+        duration={500} 
+        className='some-class' 
+        activeClass='some-active-class'
+        offset={-150}>
+        <p>Gardiennage et sécurité</p>
+      </ScrollLink>
+              
+            </div>
+            <img src="/assets/camera.jpeg" alt="" />
+          </div>
+          <div className={styles.service}>
+          <img src="/assets/window.jpeg" alt="" />
+            <div className={styles.serviceTest3}>
+            <ScrollLink 
+        to="nettoyage" 
+        spy={true} 
+        smooth={true} 
+        duration={500} 
+        className='some-class' 
+        activeClass='some-active-class'
+        offset={-150}>
+        <p>Nettoyage et hygiène</p>
+      </ScrollLink>
+            </div>
+          </div>
+        </div>
         
-        <div className={styles.main4}>
-        <div className={styles.main4Container}>
-        <ScrollLink activeClass="active" to="nettoyageId" spy={true} smooth={true} offset={-120} duration={500}>
-
-          <div className={styles.card}>
-            <center>
-            <div className={styles.circle}>
-            <img src="/assets/cleaning2.png" alt="" />
+        <div className={styles.servicesContainer}>
+          <div className={styles.servicesText}>
+            <h3 id='jardinage'>Jardinage et entretien des espaces verts</h3>
+            <p>Transformez votre espace extérieur en une oasis à couper le souffle grâce à nos services d'aménagement paysager. De la conception à la mise en œuvre, en passant par la planification, nous travaillerons en étroite collaboration avec vous pour donner vie à votre vision. Notre équipe intégrera une variété d'éléments tels que des plantes, des aménagements en dur, des jeux d'eau et des éclairages pour créer un paysage harmonieux et accueillant.</p>
+            <div className={styles.images}>
+              <img src="/assets/gar1.jpg" alt="" />
+              <img src="/assets/gar2.jpg" alt="" />
+              <img src="/assets/gar3.jpg" alt="" />
             </div>
-            <h2>Nettoyage</h2>
-            <p>Des solutions de nettoyage personnalisées pour répondre à vos besoins uniques</p>
-            <p>Laissez vos soucis derrière vous grâce à nos solutions de nettoyage sûres et respectueuses de l'environnement</p>
-            </center>
-          </div>
-
-          </ScrollLink>  
-
-          <ScrollLink activeClass="active" to="securityId" spy={true} smooth={true} offset={-120} duration={500}>
-
-          <div className={styles.card}>
-            <center>
-            <div className={styles.circle}>
-            <img src="/assets/security.png" alt="" />
+            <h3 id='securite'>Gardiennage et sécurité</h3>
+          <p>Nous comprenons que la sécurité est une priorité absolue pour vous et votre entreprise. C'est pourquoi nous proposons une gamme complète de services de sécurité conçus pour répondre à vos besoins spécifiques, à vos préférences et à votre budget. Que vous ayez besoin de sécurité pour un événement spécial, de protection des cadres ou de sécurité pour votre entreprise ou votre organisation, nous avons ce qu'il vous faut.
+Nous nous engageons à fournir des services de sécurité de première qualité aux entreprises, aux organisations et aux particuliers. Notre équipe de professionnels de la sécurité, hautement qualifiés et expérimentés, se consacre à assurer votre sécurité et votre tranquillité d'esprit.</p>
+<div className={styles.images}>
+              <img src="/assets/sec1.jpg" alt="" />
+              <img src="/assets/sec2.jpg" alt="" />
+              <img src="/assets/sec3.jpg" alt="" />
             </div>
-            <h2>Sécurité</h2>
-            <p>Notre equipe d'experts en securité est toujours la pour vous aider a rester en sécurité</p>
-            </center>
-          </div>
-
-          </ScrollLink> 
-          </div>
-        </div>
-
-         
-
-        <div id="nettoyageId" className={styles.main22}>
-        <video loop autoPlay muted className={styles.video}>
-        <source src="/assets/vid.mp4" />
-      </video>
-          <div className={styles.mainbox}>
-            <div>
-            <h1 className={styles.tilteApropre}>NETTOYAGE PROFESSIONNEL DE CONFIANCE</h1>
-            <p className={styles.minitilteApropre}>Créez un environnement de travail propre et sain adapté à vos besoins.</p>
+         <h3 id='nettoyage'>Nettoyage et hygiène</h3>
+         <p>Notre entreprise de nettoyage est fière de son professionnalisme, de sa fiabilité et de son souci du détail. Nous nous efforçons de dépasser vos attentes en fournissant des services de nettoyage de qualité supérieure qui sont adaptés à vos besoins et préférences uniques. Nous offrons également des options de programmation flexibles, des prix compétitifs et un service exceptionnel.
+Nous n'utilisons que les meilleurs produits et équipements de nettoyage pour garantir une efficacité et une sécurité maximales. Nous respectons également des protocoles de nettoyage et des directives de sécurité stricte afin d'éviter toute contamination croisée et de garantir la santé et la sécurité de nos clients et de notre personnel.
+Nous comprenons qu'un espace propre et organisé est crucial pour la productivité, la relaxation et le bien-être général. C'est pourquoi nous proposons une gamme complète de services de nettoyage adaptés à vos besoins spécifiques, à vos préférences et à votre budget. Que vous ayez besoin d'un nettoyage en profondeur ponctuel, d'un entretien régulier ou d'un nettoyage pour un événement spécial, nous avons ce qu'il vous faut. </p>
+<div className={styles.images}>
+              <img src="/assets/cl1.jpg" alt="" />
+              <img src="/assets/cl2.jpg" alt="" />
+              <img src="/assets/cl3.jpg" alt="" />
             </div>
           </div>
         </div>
 
-        <div className={styles.main5}>
-          <div className={styles.main5Container}>
-            <p>Bienvenue dans notre entreprise de nettoyage professionnelle ! Nous sommes spécialisés dans la fourniture de services de nettoyage de haute qualité aux particuliers et aux entreprises. Notre équipe d'experts en nettoyage s'engage à veiller à ce que vos espaces de vie ou de travail soient impeccables et aseptisés, afin que vous puissiez profiter d'un environnement plus sain et plus confortable.</p>
-            <p>Nous comprenons qu'un espace propre et organisé est crucial pour la productivité, la relaxation et le bien-être général. C'est pourquoi nous proposons une gamme complète de services de nettoyage adaptés à vos besoins spécifiques, à vos préférences et à votre budget. Que vous ayez besoin d'un nettoyage en profondeur ponctuel, d'un entretien régulier ou d'un nettoyage pour un événement spécial, nous avons ce qu'il vous faut.</p>
-            <p>Nos services comprennent, entre autres, le dépoussiérage, l'aspiration, le nettoyage à la serpillière, l'essuyage, la désinfection, l'organisation et le désencombrement. Nous n'utilisons que les meilleurs produits et équipements de nettoyage pour garantir une efficacité et une sécurité maximales. Nous respectons également des protocoles de nettoyage et des directives de sécurité stricts afin d'éviter toute contamination croisée et de garantir la santé et la sécurité de nos clients et de notre personnel</p>
-            <p>Notre entreprise de nettoyage est fière de son professionnalisme, de sa fiabilité et de son souci du détail. Nous nous efforçons de dépasser vos attentes en fournissant des services de nettoyage de qualité supérieure qui sont adaptés à vos besoins et préférences uniques. Nous offrons également des options de programmation flexibles, des prix compétitifs et un service à la clientèle exceptionnel, afin que vous puissiez profiter d'une expérience de nettoyage sans tracas.</p>
-            <p>Que vous ayez besoin de services de nettoyage résidentiels ou commerciaux, notre équipe d'experts en nettoyage est là pour vous aider. Contactez-nous dès aujourd'hui pour prendre un rendez-vous de nettoyage ou pour demander un devis gratuit. Nous sommes impatients de vous aider à obtenir un espace de vie ou de travail plus propre, plus sain et plus confortable !</p>
-          </div>
-        </div>
 
-        <div id='securityId' className={styles.main25}>
-          <div className={styles.mainbox}>
-            <div>
-            <h1 className={styles.tilteApropre}>Solutions de sécurité personnalisées pour répondre a vos besoins unique</h1>
-            </div>
-          </div>
-        </div>
-        <div className={styles.main5}>
-          <div className={styles.main5Container}>
-            <br /><br />
-            <p>Bienvenue dans notre entreprise de sécurité ! Nous nous engageons à fournir des services de sécurité de première qualité aux entreprises, aux organisations et aux particuliers de votre région. Notre équipe de professionnels de la sécurité, hautement qualifiés et expérimentés, se consacre à assurer votre sécurité et votre tranquillité d'esprit.</p>
-            <p>Nous comprenons que la sécurité est une priorité absolue pour vous et votre entreprise. C'est pourquoi nous proposons une gamme complète de services de sécurité conçus pour répondre à vos besoins spécifiques, à vos préférences et à votre budget. Que vous ayez besoin de sécurité pour un événement spécial, de protection des cadres ou de sécurité pour votre entreprise ou votre organisation, nous avons ce qu'il vous faut.</p>
-            <p>Nous utilisons des technologies et des équipements de pointe pour garantir une efficacité et une sécurité maximales. Afin de garantir une réponse rapide et efficace à toute situation de sécurité.</p>
-            <p>Notre société de sécurité est fière de son professionnalisme, de sa fiabilité et de son souci du détail. Nous comprenons que chaque situation est unique, et nous travaillons en étroite collaboration avec nos clients pour développer des plans de sécurité personnalisés qui répondent à leurs besoins et préférences spécifiques. Nous offrons également une assistance à la clientèle 24 heures sur 24, 7 jours sur 7, de sorte que vous pouvez être assuré que nous sommes toujours là pour vous aider.</p>
-            <p>Que vous recherchiez des services de sécurité pour votre entreprise, votre organisation ou votre protection personnelle, notre équipe de professionnels de la sécurité est là pour vous aider. Contactez-nous dès aujourd'hui pour prendre rendez-vous ou pour demander un devis gratuit. Nous sommes impatients de vous aider à créer un environnement plus sûr et plus sécurisé !</p>
-          </div>
-        </div>
+        <Footer/>
 
-        <div className={styles.secssion2}>
-          <div className={styles.cards4}>
-            <h1>CERTIFICATIONS</h1>
-            <center>
-            <div className={styles.cards4Container}>
-              <div className={styles.card4}>
-              <img src="/assets/thumbs-up.png" alt="" />
-              <h1>Prestataires satisfaits</h1>
-              </div>
-
-              <div className={styles.card4}>
-              <img src="/assets/calendar.png" alt="" />
-              <h1>Horaires sur mesure</h1>
-              </div>
-
-              <div className={styles.card4}>
-              <img src="/assets/cleaning.png" alt="" />
-              <h1>Produits de pointe</h1>
-              </div>
-
-              <div className={styles.card4}>
-              <img src="/assets/clean.png" alt="" />
-              <h1>Services d'hygiène</h1>
-              </div>
-            </div>
-            </center>
-          </div>
-
-        </div>
-      </main>
+        </main>
     </>
   )
 }
