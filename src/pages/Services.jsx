@@ -107,8 +107,10 @@ export default function Services() {
 
         <div className={styles.services}>
           <div className={styles.service}>
-            <img src="/assets/grass.jpg" alt="" />
-            <div className={styles.serviceTest}>
+          <div className={styles.imaging}>
+          <Image fill src="/assets/grass.jpg" />
+          </div>
+            <div className={styles.serviceTest}>  
             <ScrollLink 
         to="jardinage" 
         spy={true} 
@@ -135,10 +137,14 @@ export default function Services() {
       </ScrollLink>
               
             </div>
-            <img src="/assets/camera.jpeg" alt="" />
+            <div className={styles.imaging}>
+          <Image fill src="/assets/camera.jpeg" />
+          </div>
           </div>
           <div className={styles.service}>
-          <img src="/assets/window.jpeg" alt="" />
+          <div className={styles.imaging}>
+          <Image fill src="/assets/window.jpeg" />
+          </div>
             <div className={styles.serviceTest3}>
             <ScrollLink 
         to="nettoyage" 
@@ -159,30 +165,59 @@ export default function Services() {
             <h3 id='jardinage'>Jardinage et entretien des espaces verts</h3>
             <p>Transformez votre espace extérieur en une oasis à couper le souffle grâce à nos services d'aménagement paysager. De la conception à la mise en œuvre, en passant par la planification, nous travaillerons en étroite collaboration avec vous pour donner vie à votre vision. Notre équipe intégrera une variété d'éléments tels que des plantes, des aménagements en dur, des jeux d'eau et des éclairages pour créer un paysage harmonieux et accueillant.</p>
             <div className={styles.images}>
-              <img src="/assets/gar1.jpg" alt="" />
-              <img src="/assets/gar2.jpg" alt="" />
-              <img src="/assets/gar3.jpg" alt="" />
+              <div className={styles.imaging2}>
+              <Image fill src="/assets/gar1.jpg" />
+
+              </div>
+              <div className={styles.imaging2}>
+              <Image fill src="/assets/gar2.jpg" />
+
+              </div>
+              <div className={styles.imaging2}>
+              <Image fill src="/assets/gar3.jpg" />
+
+              </div>
+              
             </div>
             <h3 id='securite'>Gardiennage et sécurité</h3>
           <p>Nous comprenons que la sécurité est une priorité absolue pour vous et votre entreprise. C'est pourquoi nous proposons une gamme complète de services de sécurité conçus pour répondre à vos besoins spécifiques, à vos préférences et à votre budget. Que vous ayez besoin de sécurité pour un événement spécial, de protection des cadres ou de sécurité pour votre entreprise ou votre organisation, nous avons ce qu'il vous faut.
 Nous nous engageons à fournir des services de sécurité de première qualité aux entreprises, aux organisations et aux particuliers. Notre équipe de professionnels de la sécurité, hautement qualifiés et expérimentés, se consacre à assurer votre sécurité et votre tranquillité d'esprit.</p>
 <div className={styles.images}>
-              <img src="/assets/sec1.jpg" alt="" />
-              <img src="/assets/sec2.jpg" alt="" />
-              <img src="/assets/sec3.jpg" alt="" />
+<div className={styles.imaging2}>
+<Image fill src="/assets/sec1.jpg" />
+
+</div>
+<div className={styles.imaging2}>
+<Image fill src="/assets/sec2.jpg" />
+
+</div>
+<div className={styles.imaging2}>
+<Image fill src="/assets/sec3.jpg" />
+
+</div>
+             
             </div>
          <h3 id='nettoyage'>Nettoyage et hygiène</h3>
          <p>Notre entreprise de nettoyage est fière de son professionnalisme, de sa fiabilité et de son souci du détail. Nous nous efforçons de dépasser vos attentes en fournissant des services de nettoyage de qualité supérieure qui sont adaptés à vos besoins et préférences uniques. Nous offrons également des options de programmation flexibles, des prix compétitifs et un service exceptionnel.
 Nous n'utilisons que les meilleurs produits et équipements de nettoyage pour garantir une efficacité et une sécurité maximales. Nous respectons également des protocoles de nettoyage et des directives de sécurité stricte afin d'éviter toute contamination croisée et de garantir la santé et la sécurité de nos clients et de notre personnel.
 Nous comprenons qu'un espace propre et organisé est crucial pour la productivité, la relaxation et le bien-être général. C'est pourquoi nous proposons une gamme complète de services de nettoyage adaptés à vos besoins spécifiques, à vos préférences et à votre budget. Que vous ayez besoin d'un nettoyage en profondeur ponctuel, d'un entretien régulier ou d'un nettoyage pour un événement spécial, nous avons ce qu'il vous faut. </p>
 <div className={styles.images}>
-              <img src="/assets/cl1.jpg" alt="" />
-              <img src="/assets/cl2.jpg" alt="" />
-              <img src="/assets/cl3.jpg" alt="" />
+  <div className={styles.imaging2}>
+<Image fill src="/assets/cl1.jpg" />
+
+</div>
+<div className={styles.imaging2}>
+<Image fill src="/assets/cl2.jpg" />
+
+</div>
+<div className={styles.imaging2}>
+<Image fill src="/assets/cl3.jpg" />
+
+</div>
             </div>
           </div>
         </div>
-
+        <br />
 
         <Footer/>
 

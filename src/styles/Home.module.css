@@ -548,6 +548,16 @@
   display: flex;
   justify-content: center;
 }
+.service .imaging{
+  width: 50%;
+  position: relative;
+}
+.images .imaging2{
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin-right: 10px;
+}
 .serviceTest{
   width: 50%;
   background-color: #16389c;
