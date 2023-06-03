@@ -40,19 +40,22 @@ export default function Contact() {
             <div className={styles.navS2}>
               <p className={styles.text2} style={{display:'flex',alignItems:"center"}}> <p className={styles.text}>Appelez-nous:</p>+212 6 59 85 35 33</p>
               <p className={styles.text2} style={{display:'flex',alignItems:"center"}}> <p className={styles.text}>Envoyez-nous un mail:</p> avenaservices@gmail.com</p>
+              <a href="https://www.linkedin.com/company/avena-services/" target='_blank' style={{marginTop:"6px",marginLeft:"5px",cursor:"pointer",textDecoration:"none"}}><Image width={20} height={20} src="/assets/linkedin.png"/></a>
+
             </div>
           </div>
           </div>
 
           <div className={styles.nav2}>
             <div className={styles.nav2S1}>
-              <Image width={75} height={75} src="/assets/logoW.jpeg" />
+              <Image width={110} height={100} src="/assets/logoW.jpeg" />
             </div>
 
             <div className={styles.nav2S2}>
-            <Link style={{textDecoration:"none"}} href="/"><p className={styles.page}>A propos</p></Link>
-              <Link style={{textDecoration:"none"}} href="/Services"><p className={styles.page}>Nos services</p></Link>
-              <Link style={{textDecoration:"none"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
+            <Link style={{textDecoration:"none"}} href="/"><p className={styles.page}>Acceuil</p></Link>
+            <Link style={{textDecoration:"none"}} href="/apropos"><p className={styles.page}>A propos</p></Link>
+            <Link style={{textDecoration:"none"}} href="/Services"><p className={styles.page}>Nos services</p></Link>
+            <Link style={{textDecoration:"none"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
             </div>
 
             <div className={styles.nav2S3}>
@@ -70,12 +73,10 @@ export default function Contact() {
         </div>
         <div style={{display:menu}} className={styles.menu}>
           <div className={styles.menuList}>
-            <center>
-            <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/"><p className={styles.page}>A propos</p></Link>
-              <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Services"><p className={styles.page}>Nos services</p></Link>
-              <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
-
-            </center>
+            <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/"><p className={styles.page}>Acceuil</p></Link>
+            <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/apropos"><p className={styles.page}>A propos</p></Link>
+            <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Services"><p className={styles.page}>Nos services</p></Link>
+            <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
           </div>
         </div>
 
@@ -92,7 +93,7 @@ export default function Contact() {
       <input  placeholder='Votre email' type="email" name="user_email" />
       <input  placeholder='Votre Numéro de téléphone' type="email" name="user_email" />
       <textarea placeholder='Message...' name="message" />
-      <input type="submit" value="Send" />
+      <input type="submit" value="Envoyer" />
     </form>
             </div>
         </div>

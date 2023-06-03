@@ -39,6 +39,8 @@ export default function Apropos() {
             <div className={styles.navS2}>
               <p className={styles.text2} style={{display:'flex',alignItems:"center"}}> <p className={styles.text}>Appelez-nous:</p>+212 6 59 85 35 33</p>
               <p className={styles.text2} style={{display:'flex',alignItems:"center"}}> <p className={styles.text}>Envoyez-nous un mail:</p> avenaservices@gmail.com</p>
+              <a href="https://www.linkedin.com/company/avena-services/" target='_blank' style={{marginTop:"6px",marginLeft:"5px",cursor:"pointer",textDecoration:"none"}}><Image width={20} height={20} src="/assets/linkedin.png"/></a>
+
             </div>
           </div>
           </div>
@@ -70,12 +72,10 @@ export default function Apropos() {
         </div>
         <div style={{display:menu}} className={styles.menu}>
           <div className={styles.menuList}>
-            <center>
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/"><p className={styles.page}>Acceuil</p></Link>
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/apropos"><p className={styles.page}>A propos</p></Link>
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Services"><p className={styles.page}>Nos services</p></Link>
               <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
-            </center>
           </div>
         </div>
 
@@ -88,6 +88,9 @@ export default function Apropos() {
         </div>
         <div className={styles.secssion1}>
           <div className={styles.sec11Container}>
+          <div className={styles.s11}>
+              <img style={{width:"100%",minWidth:"150px",marginBottom:"0px"}} src="/assets/logoW.jpeg"/>
+            </div>
             <div className={styles.s2}>
               <p style={{fontWeight:500,color:"#4C4C4C",fontSize:"17px",lineHeight:"25px"}}>Groupe Avena Services est votre partenaire fiable pour les services de nettoyage et de sécurité. Nous savons que le maintien d'un environnement propre et sécurisé est essentiel au bien-être de votre entreprise ou de votre espace résidentiel. Grâce à notre expertise professionnelle et à notre engagement en faveur de l'excellence, nous proposons des solutions complètes adaptées à vos besoins spécifiques en matière de nettoyage et de sécurité. Découvrez la gamme de services que nous proposons et profitez de la tranquillité d'esprit que procure un environnement propre et sécurisé.
 La satisfaction du client est au cœur de tout ce que nous faisons. Nous nous efforçons de dépasser vos attentes en fournissant des services de nettoyage et de sécurité de qualité supérieure, adaptés à vos besoins spécifiques. Notre équipe d'assistance à la clientèle est à votre disposition pour répondre à toutes vos questions ou préoccupations, afin de vous garantir une expérience sans faille tout au long de notre partenariat.</p>
@@ -95,7 +98,7 @@ La satisfaction du client est au cœur de tout ce que nous faisons. Nous nous ef
               <p style={{fontWeight:500,color:"#4C4C4C",fontSize:"17px",lineHeight:"25px"}}>Choisissez Groupe Avena Services pour vos besoins en matière de nettoyage et de sécurité et profitez des avantages d'un environnement propre, sûr et bien entretenu. Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques et laissez-nous créer une solution personnalisée qui réponde à vos besoins. Ensemble, nous ferons briller votre espace et en assurerons la sécurité.</p>
             </div>
             <div className={styles.s1}>
-              <img style={{width:"100%",minWidth:"350px",marginBottom:"0px",marginTop:"-60px"}} src="/assets/shake.jpg"/>
+              <img style={{width:"100%",minWidth:"150px",marginBottom:"0px"}} src="/assets/logoW.jpeg"/>
             </div>
           </div>
         </div>

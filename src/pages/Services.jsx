@@ -45,13 +45,15 @@ export default function Services() {
             <div className={styles.navS2}>
               <p className={styles.text2} style={{display:'flex',alignItems:"center"}}> <p className={styles.text}>Appelez-nous:</p>+212 6 59 85 35 33</p>
               <p className={styles.text2} style={{display:'flex',alignItems:"center"}}> <p className={styles.text}>Envoyez-nous un mail:</p> avenaservices@gmail.com</p>
+              <a href="https://www.linkedin.com/company/avena-services/" target='_blank' style={{marginTop:"6px",marginLeft:"5px",cursor:"pointer",textDecoration:"none"}}><Image width={20} height={20} src="/assets/linkedin.png"/></a>
+
             </div>
           </div>
           </div>
 
           <div className={styles.nav2}>
             <div className={styles.nav2S1}>
-              <Image width={75} height={75} src="/assets/logoW.jpeg" />
+              <Image width={110} height={100} src="/assets/logoW.jpeg" />
             </div>
 
             <div className={styles.nav2S2}>
@@ -76,12 +78,10 @@ export default function Services() {
         </div>
         <div style={{display:menu}} className={styles.menu}>
           <div className={styles.menuList}>
-            <center>
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/"><p className={styles.page}>Acceuil</p></Link>
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/apropos"><p className={styles.page}>A propos</p></Link>
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Services"><p className={styles.page}>Nos services</p></Link>
             <Link style={{textDecoration:"none",marginBottom:"20px"}} href="/Contact"><p className={styles.page}>Contact</p></Link>
-            </center>
           </div>
         </div>
 
@@ -100,9 +100,9 @@ export default function Services() {
         <div className={styles.main3}>
           <div className={styles.main3Container}>
           <center>
-            <h1 style={{letterSpacing:"5px",width:"700px",color:"black",fontFamily:"sans-serif",fontWeight:"500"}}>Nous somme animés par la passion. L'exellence et notre amour pour notre métier.</h1>
+            <h1 style={{letterSpacing:"5px",color:"black",fontFamily:"sans-serif",fontWeight:"500"}}>Nous somme animés par la passion. L'exellence et notre amour pour notre métier.</h1>
           </center>
-          </div>
+          </div>  
         </div>
 
         <div className={styles.services}>
