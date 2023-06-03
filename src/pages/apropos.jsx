@@ -115,7 +115,7 @@ La satisfaction du client est au cœur de tout ce que nous faisons. Nous nous ef
           <div className={styles.valeursContainer}>
             <div className={styles.val}>
               <div className={styles.topVal}>
-                <center><div className={styles.valLogo}></div></center>
+                <center><div style={{backgroundColor: "#16389c"}} className={styles.valLogo}></div></center>
                 <center><p>Qualité</p></center>
               </div>
               <div className={styles.mainVal}>
@@ -124,18 +124,18 @@ La satisfaction du client est au cœur de tout ce que nous faisons. Nous nous ef
             </div>
 
             <div className={styles.val}>
-              <div className={styles.topVal}>
-              <center><div className={styles.valLogo}></div></center>
+              <div className={styles.topVal}> 
+              <center><div style={{backgroundColor: "#ff4afc"}} className={styles.valLogo}></div></center>
                 <center><p>Confidentialité </p></center>
               </div>
               <div className={styles.mainVal}>
                 <p>Nous donnons la priorité à la fourniture de services de haute qualité. Cela inclut des procédures de nettoyage approfondies, un personnel de sécurité bien formé et notre préoccupation pour le souci du détail. Des programmes de formation de notre personnel, des mesures de contrôle de la qualité de l'entreprise pour vous assurer de notre engagement en faveur de l'excellence.</p>
-              </div>
+              </div> 
             </div>
 
             <div className={styles.val}>
               <div className={styles.topVal}>
-              <center><div className={styles.valLogo}></div></center>
+              <center><div style={{backgroundColor: "#7430e8"}} className={styles.valLogo}></div></center>
                 <center><p>Meilleurs services à moindre prix </p></center>
               </div>
               <div className={styles.mainVal}>
@@ -145,7 +145,7 @@ La satisfaction du client est au cœur de tout ce que nous faisons. Nous nous ef
 
             <div className={styles.val}>
               <div className={styles.topVal}>
-              <center><div className={styles.valLogo}></div></center>
+              <center><div style={{backgroundColor: "#16a9fe"}} className={styles.valLogo}></div></center>
                 <center><p>Un excellent service à la clientèle</p></center>
               </div>
               <div className={styles.mainVal}>

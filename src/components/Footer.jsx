@@ -18,7 +18,7 @@ const Footer = () => {
         <div className={styles.footerSec3}><img className={styles.imgF} src="/assets/mapF.png" alt="" /><p>Appt 01, Lotissement Chamesse Al Madina N°26, Benslimane 13000</p></div>
         <div className={styles.footerSec3}><img className={styles.imgF} src="/assets/callF.png" alt="" /><p>+212 6 59 85 35 33</p></div>
         <div className={styles.footerSec3}><img className={styles.imgF} src="/assets/emailF.png" alt="" /><p>avenaservices@gmail.com</p></div>
-        <div className={styles.footerSec3}><img className={styles.imgF} src="/assets/calendarF.png" alt="" /><p>Heurs de bureau: 08h30 -  18h00</p></div>
+        <div className={styles.footerSec3}><img className={styles.imgF} src="/assets/calendarF.png" alt="" /><p>Heures de bureau: 08h30 -  18h00</p></div>
 
         </div>
         </div>
