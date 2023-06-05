@@ -2,13 +2,21 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Link from 'next/link'
+import emailjs from '@emailjs/browser';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Contact() {
   const [menu,setMenu] = useState("none")
+  const form = useRef();
+  const [name,setName] = useState("")
+  const [email,setEmail] = useState("")
+  const [phone,setPhone] = useState("")
+  const [message,setMessage] = useState("")
+  const [sendit,setSendit] = useState(false)
 
   const handleMenu =()=>{
     if (menu == "none") {
@@ -17,6 +25,26 @@ export default function Contact() {
       setMenu("none")
     }
   }
+
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+ 
+
+    emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_PUBLIC_KEY)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => { 
+          console.log(error.text);
+      });
+
+      setSendit(true)
+      setName("")
+      setEmail("")
+      setMessage("")
+      setEmail("")
+      setPhone('')
+  };
   return (
     <>
       <Head>
@@ -87,13 +115,13 @@ export default function Contact() {
             </div>
             
             <div className={styles.contactContainer}>
-        <form>
-       
-      <input placeholder='Votre nom' type="text" name="user_name" />
-      <input  placeholder='Votre email' type="email" name="user_email" />
-      <input  placeholder='Votre Numéro de téléphone' type="email" name="user_email" />
-      <textarea placeholder='Message...' name="message" />
+        <form ref={form} onSubmit={sendEmail}> 
+      <input value={name} onChange={(e)=> setName(e.target.value)} placeholder='Votre nom' type="text" name="user_name" required/>
+      <input value={email} onChange={(e)=> setEmail(e.target.value)} placeholder='Votre email' type="email" name="user_email" required/>
+      <input value={phone} onChange={(e)=> setPhone(e.target.value)} placeholder='Votre Numéro de téléphone' type="text" name="user_phone" required/>
+      <textarea value={message} onChange={(e)=> setMessage(e.target.value)} placeholder='Message...' name="message" required/>
       <input type="submit" value="Envoyer" />
+      {sendit && <div><p>Votre message a éte bien envoyer</p></div>}
     </form>
             </div>
         </div>
