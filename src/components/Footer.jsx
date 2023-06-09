@@ -21,6 +21,9 @@ const Footer = () => {
         <div className={styles.footerSec3}><img className={styles.imgF} src="/assets/calendarF.png" alt="" /><p>Heures de bureau: 08h30 -  18h00</p></div>
 
         </div>
+        </div><br /><br />
+        <div style={{width:"100%"}}>
+          <center style={{width:"100%"}}><p style={{color:"white",textAlign:"center"}}>© 2023 AVENA . All Rights Reserved.</p></center>
         </div>
     </div>
   )
