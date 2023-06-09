@@ -129,7 +129,7 @@ La satisfaction du client est au cœur de tout ce que nous faisons. Nous nous ef
                 <center><p>Confidentialité </p></center>
               </div>
               <div className={styles.mainVal}>
-                <p>Nous donnons la priorité à la fourniture de services de haute qualité. Cela inclut des procédures de nettoyage approfondies, un personnel de sécurité bien formé et notre préoccupation pour le souci du détail. Des programmes de formation de notre personnel, des mesures de contrôle de la qualité de l'entreprise pour vous assurer de notre engagement en faveur de l'excellence.</p>
+                <p>La sécurité étant un aspect essentiel de ses services, Groupe Avena Services accorde la priorité à la fiabilité et à l'intégrité. Nous vérifions minutieusement les antécédents de notre personnel. Et nous adaptons des procédures de recrutement et de sélection strictes pour assurer le meilleur pour nos clients. </p>
               </div> 
             </div>
 
@@ -139,7 +139,7 @@ La satisfaction du client est au cœur de tout ce que nous faisons. Nous nous ef
                 <center><p>Meilleurs services à moindre prix </p></center>
               </div>
               <div className={styles.mainVal}>
-                <p>Nous donnons la priorité à la fourniture de services de haute qualité. Cela inclut des procédures de nettoyage approfondies, un personnel de sécurité bien formé et notre préoccupation pour le souci du détail. Des programmes de formation de notre personnel, des mesures de contrôle de la qualité de l'entreprise pour vous assurer de notre engagement en faveur de l'excellence.</p>
+                <p> Nous proposons à nos clients des structures de prix transparentes, sans frais cachés. Nous proposons des devis détaillés indiquant les services inclus et les coûts correspondants. Cela vous permet de comprendre clairement ce que vous payez.</p>
               </div>
             </div>
 
@@ -149,7 +149,8 @@ La satisfaction du client est au cœur de tout ce que nous faisons. Nous nous ef
                 <center><p>Un excellent service à la clientèle</p></center>
               </div>
               <div className={styles.mainVal}>
-                <p>Nous donnons la priorité à la fourniture de services de haute qualité. Cela inclut des procédures de nettoyage approfondies, un personnel de sécurité bien formé et notre préoccupation pour le souci du détail. Des programmes de formation de notre personnel, des mesures de contrôle de la qualité de l'entreprise pour vous assurer de notre engagement en faveur de l'excellence.</p>
+                <p> Groupe Avena Services dispose d'une équipe d'assistance à la clientèle réactive et attentive. Notre équipe est prête à répondre rapidement à toute demande ou préoccupation. 
+Groupe Avena Services considère que les besoins de chaque client sont uniques. Nous proposons des solutions personnalisées adaptées à vos besoins spécifiques.</p>
               </div>
             </div>
 
