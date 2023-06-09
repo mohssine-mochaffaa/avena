@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         </div><br /><br />
         <div style={{width:"100%"}}>
-          <center style={{width:"100%"}}><p style={{color:"white",textAlign:"center"}}>© 2023 AVENA . All Rights Reserved.</p></center>
+          <center style={{width:"100%"}}><p style={{color:"white",textAlign:"center"}}>© 2023 GROUPE AVENA SERVICES . All Rights Reserved.</p></center>
         </div>
     </div>
   )
